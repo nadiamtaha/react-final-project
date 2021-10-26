@@ -29,7 +29,8 @@ export default function Navbar({loginData,logout}) {
 
             </ul>
             <ul className='list-unstyled d-flex '>
-               <h5>Hello : {loginData?.first_name}</h5>
+               {loginData? <h5>Hello : {loginData.first_name}</h5>:''}
+      
                <i className='fab fa-facebook m-2'></i>
                <i className='fab fa-instagram m-2'></i>
                <i className='fab fa-youtube m-2'></i>
